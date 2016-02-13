@@ -25,7 +25,7 @@ public class FollowPlayer : MonoBehaviour
         Vector3 pos = transform.position;
         pos.x = player.position.x + offsetX;
        
-        pos.y = player.position.y + offsetY;
+        //pos.y = player.position.y + offsetY;
         
         //pos.y = player.position.y + offsetY;
         transform.position = pos;

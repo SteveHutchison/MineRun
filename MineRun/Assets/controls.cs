@@ -3,16 +3,29 @@ using System.Collections;
 
 public class controls : MonoBehaviour {
 
-    public bool canJump;
+    private bool canJump;
+    private bool canSlide;
     public int jumpStrength;
     private Rigidbody2D rb2d;
     private bool jump;
+    private bool slide;
     private float yvel;
+
+    public float slideCooldown;
+    private float gameStartTime;
+    private float slideStartTime;
+    private float currentTime;
+    public float targetSlideTime;
+    private bool sliding;
+    public float slideSpeed;
     
 
     // Use this for initialization
     void Start () {
+        gameStartTime = Time.time;
         canJump = false;
+        sliding = false;
+        canSlide = true;
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         jump = false;
     }
@@ -21,10 +34,34 @@ public class controls : MonoBehaviour {
 	void Update () {
         if (canJump && Input.GetMouseButtonDown(0))
         {
-            //rb2d.AddForce(new Vector2(0, 50 * jumpStrength));
-            //canJump = false;
             jump = true;
+        }
 
+        if (canSlide && Input.GetMouseButtonDown(1))
+        {
+            this.GetComponent<ConstantMover>().ChangeSpeed(slideSpeed);
+            this.GetComponent<ConstantMover>().sliding = true;
+            canSlide = false;
+            currentTime = Time.time - gameStartTime;
+            slideStartTime = currentTime;
+            sliding = true;
+        }
+
+        if (sliding)
+        {
+            currentTime = Time.time - gameStartTime;
+            if(currentTime - slideStartTime > targetSlideTime)
+            {
+                this.GetComponent<ConstantMover>().ChangeSpeed(-slideSpeed);
+                this.GetComponent<ConstantMover>().sliding = false;
+                sliding = false;
+            }
+        }
+
+        currentTime = Time.time - gameStartTime;
+        if (currentTime - slideStartTime > slideCooldown)
+        {
+            canSlide = true;
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -38,6 +75,12 @@ public class controls : MonoBehaviour {
         {
             canJump = false;
         }
+
+        if(canJump == false)
+        {
+            canSlide = false;
+        }
+
     }
 
     void FixedUpdate()
@@ -55,6 +98,11 @@ public class controls : MonoBehaviour {
         if (coll.gameObject.tag == "Floor")
         {
             canJump = true;
+            currentTime = Time.time - gameStartTime;
+            if (currentTime - slideStartTime > slideCooldown)
+            {
+                canSlide = true;
+            }
         }
     }
 }
