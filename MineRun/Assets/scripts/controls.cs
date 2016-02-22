@@ -5,33 +5,42 @@ public class controls : MonoBehaviour {
 
     private bool canJump;
     private bool canSlide;
-    public int jumpStrength;
     private Rigidbody2D rb2d;
     private bool jump;
     private bool slide;
     private float yvel;
-
-    public float slideCooldown;
+    private float slideCooldown;
+    private float slideSlowdown;
     private float gameStartTime;
     private float slideStartTime;
     private float currentTime;
-    public float targetSlideTime;
     private bool sliding;
+    private bool decreaseOnce;
+    private bool increaseOnce;
+
+    public int jumpStrength;
+    public float targetSlideTime;
     public float slideSpeed;
     
 
     // Use this for initialization
-    void Start () {
+    void Start ()
+    {
         gameStartTime = Time.time;
         canJump = false;
         sliding = false;
         canSlide = true;
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         jump = false;
+        slideCooldown = 0.0f;
+        slideSlowdown = 4.05f;
+        decreaseOnce = false;
+        increaseOnce = false;
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         if (canJump && Input.GetMouseButtonDown(0))
         {
             jump = true;
@@ -45,6 +54,7 @@ public class controls : MonoBehaviour {
             currentTime = Time.time - gameStartTime;
             slideStartTime = currentTime;
             sliding = true;
+            slideCooldown = 5.0f;
         }
 
         if (sliding)
@@ -55,7 +65,20 @@ public class controls : MonoBehaviour {
                 this.GetComponent<ConstantMover>().ChangeSpeed(-slideSpeed);
                 this.GetComponent<ConstantMover>().sliding = false;
                 sliding = false;
+                decreaseOnce = true;
             }
+        }
+
+        if(currentTime - slideStartTime > targetSlideTime && currentTime - slideStartTime < slideSlowdown && decreaseOnce)
+        {
+            this.GetComponent<ConstantMover>().ChangeSpeed(-2.0f);
+            decreaseOnce = false;
+            increaseOnce = true;
+        }
+        if (currentTime - slideStartTime >= slideSlowdown && increaseOnce)
+        {
+            this.GetComponent<ConstantMover>().ChangeSpeed(2.0f);
+            increaseOnce = false;
         }
 
         currentTime = Time.time - gameStartTime;

@@ -68,10 +68,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ConstantMover.cs" />
-    <Compile Include="Assets\FollowPlayer.cs" />
-    <Compile Include="Assets\MoveEnvironment.cs" />
-    <Compile Include="Assets\controls.cs" />
+    <Compile Include="Assets\scripts\ConstantMover.cs" />
+    <Compile Include="Assets\scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\scripts\MoveEnvironment.cs" />
+    <Compile Include="Assets\scripts\controls.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

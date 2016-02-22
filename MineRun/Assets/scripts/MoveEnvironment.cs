@@ -19,8 +19,8 @@ public class MoveEnvironment : MonoBehaviour {
 		//update current position
 		pos = transform.position;
 
-		if (pos.x + 20 < cameraTrans.position.x) {
-			pos.x += 44;
+		if (pos.x + 38 < cameraTrans.position.x) {
+			pos.x += 19*4;
 
 			/*
 			if(transform.tag == "Wall")
