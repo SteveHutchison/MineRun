@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: 5086dec899ae5ee4ab7ebd6f40e3e236
+timeCreated: 1457305900
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Droid seperated moving finished_0
+    21300002: Droid seperated moving finished_1
+    21300004: Droid seperated moving finished_2
+    21300006: Droid seperated moving finished_3
+    21300008: Droid seperated moving finished_4
+    21300010: Droid seperated moving finished_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Droid seperated moving finished_0
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 151
+        width: 959
+        height: 1222
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid seperated moving finished_1
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 151
+        width: 964
+        height: 1222
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid seperated moving finished_2
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 147
+        width: 969
+        height: 1226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid seperated moving finished_3
+      rect:
+        serializedVersion: 2
+        x: 4277
+        y: 147
+        width: 969
+        height: 1226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid seperated moving finished_4
+      rect:
+        serializedVersion: 2
+        x: 5715
+        y: 147
+        width: 972
+        height: 1226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid seperated moving finished_5
+      rect:
+        serializedVersion: 2
+        x: 7095
+        y: 143
+        width: 965
+        height: 1226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
