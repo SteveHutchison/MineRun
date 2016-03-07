@@ -27,7 +27,8 @@ public class MoveEnvironment : MonoBehaviour {
 		//update current position
 		pos = transform.position;
 
-		if (pos.x + 38 < cameraTrans.position.x) {
+		if (pos.x + 38 < cameraTrans.position.x)
+        {
 			pos.x += 19*4;
 
             if (transform.tag == "Falling")
@@ -37,16 +38,7 @@ public class MoveEnvironment : MonoBehaviour {
                 rb2d.gravityScale = 0;
                 rb2d.velocity *= 0;
             }
-
-            /*
-			if(transform.tag == "Wall")
-			{
-				pos.x += 26;
-				ScoreBoard.AddScore (10);
-			}*/
             transform.position = pos;
-
 		}
-
 	}
 }
