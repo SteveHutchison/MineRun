@@ -37,7 +37,12 @@ public class ConstantMover : MonoBehaviour {
         maxSpeed += change;
     }
 
-    
+    public void SetSpeed(float set)
+    {
+        maxSpeed = set;
+    }
+
+
 
     void FixedUpdate()
     {

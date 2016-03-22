@@ -174,8 +174,9 @@ public class controls : MonoBehaviour {
 
         if (curdistance <= startdistance && hitDecreaseOnce)
         {
-            this.GetComponent<ConstantMover>().ChangeSpeed(2.5f);
+            this.GetComponent<ConstantMover>().SetSpeed(10.0f);
             hitDecreaseOnce = false;
+
         }
 
         currentTime = Time.time - gameStartTime;
