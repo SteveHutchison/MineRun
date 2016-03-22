@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 5a334e2d7befc3c4ba30c6efdc19f2de
+timeCreated: 1457954632
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Droid jumping finished_0
+    21300002: Droid jumping finished_1
+    21300004: Droid jumping finished_2
+    21300006: Droid jumping finished_3
+    21300008: Droid jumping finished_4
+    21300010: Droid jumping finished_5
+    21300012: Droid jumping finished_6
+    21300014: Droid jumping finished_7
+    21300016: Droid jumping finished_8
+    21300018: Droid jumping finished_9
+    21300020: Droid jumping finished_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Droid jumping finished_0
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 184
+        width: 1057
+        height: 1341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_1
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 184
+        width: 1072
+        height: 1708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_2
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 184
+        width: 1072
+        height: 1551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_3
+      rect:
+        serializedVersion: 2
+        x: 4644
+        y: 184
+        width: 1065
+        height: 1348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_4
+      rect:
+        serializedVersion: 2
+        x: 5919
+        y: 191
+        width: 1065
+        height: 1349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_5
+      rect:
+        serializedVersion: 2
+        x: 7268
+        y: 191
+        width: 1057
+        height: 1356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_6
+      rect:
+        serializedVersion: 2
+        x: 8580
+        y: 184
+        width: 1057
+        height: 1341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_7
+      rect:
+        serializedVersion: 2
+        x: 9802
+        y: 184
+        width: 1035
+        height: 1408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_8
+      rect:
+        serializedVersion: 2
+        x: 11174
+        y: 184
+        width: 1035
+        height: 1558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_9
+      rect:
+        serializedVersion: 2
+        x: 12434
+        y: 192
+        width: 1034
+        height: 1670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid jumping finished_10
+      rect:
+        serializedVersion: 2
+        x: 13836
+        y: 244
+        width: 1057
+        height: 1339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,7 +12,7 @@ public class MoveEnvironment : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		cam = GameObject.FindGameObjectWithTag("MainCamera");
-        if (transform.tag == "Falling")
+        if (transform.tag == "Falling" || transform.tag == "Raising")
         {
             rb2d = gameObject.GetComponent<Rigidbody2D>();
         }
@@ -27,9 +27,9 @@ public class MoveEnvironment : MonoBehaviour {
 		//update current position
 		pos = transform.position;
 
-		if (pos.x + 38 < cameraTrans.position.x)
+		if (pos.x + 60 < cameraTrans.position.x)
         {
-			pos.x += 19*4;
+			pos.x += 19*6;
 
             if (transform.tag == "Falling")
             {
@@ -37,6 +37,11 @@ public class MoveEnvironment : MonoBehaviour {
                 pos.y = 8.2f;
                 rb2d.gravityScale = 0;
                 rb2d.velocity *= 0;
+            }
+            if (transform.tag == "Raising")
+            {
+                working = true;
+                pos.y = -3.3f;
             }
             transform.position = pos;
 		}

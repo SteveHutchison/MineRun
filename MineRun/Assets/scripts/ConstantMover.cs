@@ -9,27 +9,35 @@ public class ConstantMover : MonoBehaviour {
     public Vector3 rotationLock;
     public float yvel;
     public bool sliding;
+    public GameObject ghost;
+    public float startdistance;
+    public float curdistance;
 
     private Rigidbody2D rb2d;
 
     // Use this for initialization
     void Start () {
-        maxSpeed = 8;
+        //maxSpeed = 8;
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         sliding = false;
         rotationLock.x = 0;
         rotationLock.y = 0;
         rotationLock.z = 0;
+        ghost = GameObject.FindGameObjectWithTag("Ghost");
+        startdistance = (transform.position.x - ghost.transform.position.x);
     }
 	
 	// Update is called once per frame
 	void Update () {
-	}
+        curdistance = (transform.position.x - ghost.transform.position.x);
+    }
 
     public void ChangeSpeed(float change)
     {
         maxSpeed += change;
     }
+
+    
 
     void FixedUpdate()
     {
