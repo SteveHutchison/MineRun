@@ -99,17 +99,17 @@ public class controls : MonoBehaviour {
             endtimer = true;
         }
 
-        if (curdistance >= 11.5f && !sliding)
+        if (curdistance >= 10.5f && !sliding)
         {
             ghost.GetComponent<GhostMover>().maxSpeed = 10.0f;
             //hit = true;
-            ghost.GetComponent<SpriteRenderer>().color = new Vector4(1, 0, 0, 1);
+            ghostAnimator.SetBool("screaming", true);
         }
-        if (curdistance < 11.5f)
+        if (curdistance < 10.5f)
         {
             ghost.GetComponent<GhostMover>().maxSpeed = 9.5f;
             //hit = true;
-            ghost.GetComponent<SpriteRenderer>().color = new Vector4(1, 1, 1, 1);
+            ghostAnimator.SetBool("screaming", false);
         }
 
         if(endtimer)
