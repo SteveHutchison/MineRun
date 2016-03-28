@@ -30,7 +30,7 @@ public class RaisingObject : MonoBehaviour {
 
         if(currentTime - startTime >= targetTime)
         {
-            ghost.GetComponent<Animator>().SetBool("armDown", false);
+            //ghost.GetComponent<Animator>().SetBool("armDown", false);
         }
 
         if (player.transform.position.x > transform.position.x - 6.0f && player.transform.position.x < transform.position.x)
@@ -41,7 +41,7 @@ public class RaisingObject : MonoBehaviour {
         if(moving == true)
         {
             startTime = Time.time;
-            ghost.GetComponent<Animator>().SetBool("armDown", true);
+            //ghost.GetComponent<Animator>().SetBool("armDown", true);
             Vector2 pos = new Vector2(transform.position.x, transform.position.y);
             if(pos.y < -1.3f)
             {

@@ -10,11 +10,22 @@ public class ObstacleHandler : MonoBehaviour {
     private Vector3 objectPos;
     private int rand;
     public bool solid;
+    private Animator ghostAnimator;
+    private GameObject ghost1;
+
+    private float startTime;
+    public float curTime;
+    public float animTime;
+    public float runTime;
 
 	// Use this for initialization
 	void Start () {
 	    player = GameObject.FindGameObjectWithTag("Player");
+        ghost1 = GameObject.FindGameObjectWithTag("Ghost");
+        ghostAnimator = ghost1.GetComponent<Animator>();
         curObstacles = 0;
+        startTime = Time.time;
+        animTime = 1.0f;
     }
 	
 	// Update is called once per frame
@@ -24,14 +35,18 @@ public class ObstacleHandler : MonoBehaviour {
             playerPos = player.transform.position;
             rand = Random.Range(0, 3);
             objectPos = playerPos;
-            objectPos.x += 15;
+            objectPos.x += 16;
             if(rand == 0)
             {
                 objectPos.y = 7.5f;
+                startTime = Time.time;
+                ghostAnimator.SetBool("screaming", true);
             }
             if (rand == 1)
             {
                 objectPos.y = -3.5f;
+                startTime = Time.time;
+                ghostAnimator.SetBool("armDown", true);
             }
             if (rand == 2)
             {
@@ -40,7 +55,14 @@ public class ObstacleHandler : MonoBehaviour {
             Instantiate(obstacle[rand], objectPos, Quaternion.identity);
             curObstacles++;
         }
-	}
+        curTime = Time.time;
+        runTime = curTime - startTime;
+        if(runTime >= animTime)
+        {
+            ghostAnimator.SetBool("armDown", false);
+            ghostAnimator.SetBool("screaming", false);
+        }
+    }
 
     public void DecreaseObs()
     {

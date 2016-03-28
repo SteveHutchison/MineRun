@@ -101,15 +101,29 @@ public class controls : MonoBehaviour {
 
         if (curdistance >= 10.5f && !sliding)
         {
-            ghost.GetComponent<GhostMover>().maxSpeed = 10.0f;
-            //hit = true;
-            ghostAnimator.SetBool("screaming", true);
+            if (ghost != null)
+            {
+                ghost.GetComponent<GhostMover>().maxSpeed = 10.0f;
+                //hit = true;
+                //ghostAnimator.SetBool("screaming", true);
+            }
+            else
+            {
+                ghost = GameObject.FindGameObjectWithTag("Ghost");
+            }
         }
         if (curdistance < 10.5f)
         {
-            ghost.GetComponent<GhostMover>().maxSpeed = 9.5f;
-            //hit = true;
-            ghostAnimator.SetBool("screaming", false);
+            if (ghost != null)
+            {
+                ghost.GetComponent<GhostMover>().maxSpeed = 9.5f;
+                //hit = true;
+                //ghostAnimator.SetBool("screaming", false);
+            }
+            else
+            {
+                ghost = GameObject.FindGameObjectWithTag("Ghost");
+            }
         }
 
         if(endtimer)
