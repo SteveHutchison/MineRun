@@ -19,6 +19,9 @@ public class controls : MonoBehaviour {
     private bool hitDecreaseOnce;
     private bool increaseOnce;
 
+    private bool slow;
+    private bool increase;
+
     public float startdistance;
 
     public float curdistance;
@@ -37,6 +40,7 @@ public class controls : MonoBehaviour {
     public Vector3 brokenPos;
 
     public Animator animator;
+    private Animator ghostAnimator;
 
     public bool hit;
     public float hitloss;
@@ -45,6 +49,9 @@ public class controls : MonoBehaviour {
     public float slideSpeed;
 
     public GameObject ghost;
+    private bool endgame;
+    public bool endtimer;
+    public float targetEnd;
 
 
     // Use this for initialization
@@ -62,6 +69,8 @@ public class controls : MonoBehaviour {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         source = GetComponent<AudioSource>();
 
+        
+
         animator = GetComponent<Animator>();
         animator.SetBool("jumping", false);
         jump = false;
@@ -73,6 +82,9 @@ public class controls : MonoBehaviour {
         hitDecreaseOnce = false;
 
         ghost = GameObject.FindGameObjectWithTag("Ghost");
+
+        ghostAnimator = ghost.GetComponent<Animator>();
+
         startdistance = (transform.position.x - ghost.transform.position.x);
 
     }
@@ -80,10 +92,42 @@ public class controls : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        
-
-
         curdistance = (transform.position.x - ghost.transform.position.x);
+        if(curdistance <= 3.5f && !endgame)
+        {
+            ghostAnimator.SetBool("grabbing", true);
+            endtimer = true;
+        }
+
+        if (curdistance >= 11.5f && !sliding)
+        {
+            ghost.GetComponent<GhostMover>().maxSpeed = 10.0f;
+            //hit = true;
+            ghost.GetComponent<SpriteRenderer>().color = new Vector4(1, 0, 0, 1);
+        }
+        if (curdistance < 11.5f)
+        {
+            ghost.GetComponent<GhostMover>().maxSpeed = 9.5f;
+            //hit = true;
+            ghost.GetComponent<SpriteRenderer>().color = new Vector4(1, 1, 1, 1);
+        }
+
+        if(endtimer)
+        {
+            currentTime = Time.time;
+            targetEnd = currentTime += 1.0f;
+            endgame = true;
+            endtimer = false;
+        }
+
+        if(endgame)
+        {
+            currentTime = Time.time;
+            if(currentTime >= targetEnd)
+            {
+                Application.LoadLevel("lightingScene");
+            }
+        }
 
         if (canJump && Input.GetMouseButtonDown(0))
         {
@@ -135,7 +179,7 @@ public class controls : MonoBehaviour {
 
         if (hit == true)
         {
-            if (!sliding)
+            if (!sliding && !increaseOnce && !decreaseOnce)
             {
                 startdistance = (transform.position.x - ghost.transform.position.x);
             }
