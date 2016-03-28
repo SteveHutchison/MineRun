@@ -9,6 +9,7 @@ public class ObstacleHandler : MonoBehaviour {
     private Vector3 playerPos;
     private Vector3 objectPos;
     private int rand;
+    public bool solid;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +24,7 @@ public class ObstacleHandler : MonoBehaviour {
             playerPos = player.transform.position;
             rand = Random.Range(0, 3);
             objectPos = playerPos;
-            objectPos.x += 12;
+            objectPos.x += 15;
             if(rand == 0)
             {
                 objectPos.y = 7.5f;
@@ -63,6 +64,7 @@ public class ObstacleHandler : MonoBehaviour {
         if (coll.gameObject.tag == "Solid")
         {
             Destroy(coll.gameObject);
+            solid = true;
             curObstacles--;
         }
     }
