@@ -13,6 +13,8 @@ public class ObstacleHandler : MonoBehaviour {
     private Animator ghostAnimator;
     private GameObject ghost1;
 
+    private int lastRand;
+
     private float startTime;
     public float curTime;
     public float animTime;
@@ -23,7 +25,7 @@ public class ObstacleHandler : MonoBehaviour {
 	    player = GameObject.FindGameObjectWithTag("Player");
         ghost1 = GameObject.FindGameObjectWithTag("Ghost");
         ghostAnimator = ghost1.GetComponent<Animator>();
-        curObstacles = 0;
+        curObstacles = 1;
         startTime = Time.time;
         animTime = 1.0f;
     }
@@ -34,6 +36,11 @@ public class ObstacleHandler : MonoBehaviour {
         {
             playerPos = player.transform.position;
             rand = Random.Range(0, 4);
+            while(rand == lastRand)
+            {
+                rand = Random.Range(0, 4);
+            }
+            lastRand = rand;
             objectPos = playerPos;
             objectPos.x += 16;
             if(rand == 0)
