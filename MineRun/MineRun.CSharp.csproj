@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ObstacleHandler.cs" />
+    <Compile Include="Assets\RemoveRocks.cs" />
     <Compile Include="Assets\scripts\ConstantMover.cs" />
     <Compile Include="Assets\scripts\DropObject.cs" />
     <Compile Include="Assets\scripts\FollowPlayer.cs" />

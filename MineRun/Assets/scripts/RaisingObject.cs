@@ -43,13 +43,13 @@ public class RaisingObject : MonoBehaviour {
             startTime = Time.time;
             //ghost.GetComponent<Animator>().SetBool("armDown", true);
             Vector2 pos = new Vector2(transform.position.x, transform.position.y);
-            if(pos.y < -1.3f)
+            if(pos.y < -2.3f)
             {
                 pos.y += 0.1f;
             }
-            if(pos.y >= -1.3f)
+            if(pos.y >= -2.3f)
             {
-                pos.y = -1.3f;
+                pos.y = -2.3f;
                 moving = false;
             }
             rb2d.MovePosition(pos);

@@ -139,7 +139,7 @@ public class controls : MonoBehaviour {
             currentTime = Time.time;
             if(currentTime >= targetEnd)
             {
-                Application.LoadLevel("lightingScene");
+                Application.LoadLevel("final");
             }
         }
 
@@ -296,6 +296,11 @@ public class controls : MonoBehaviour {
         }
 
         if (coll.gameObject.tag == "Falling")
+        {
+            hit = true;
+        }
+
+        if (coll.gameObject.tag == "Static")
         {
             hit = true;
         }

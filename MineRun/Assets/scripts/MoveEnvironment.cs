@@ -27,21 +27,21 @@ public class MoveEnvironment : MonoBehaviour {
 		//update current position
 		pos = transform.position;
 
-		if (pos.x + 60 < cameraTrans.position.x)
+		if (pos.x + 235.7f < cameraTrans.position.x)
         {
-			pos.x += 19*6;
+			pos.x += 235.7f * 2;
 
             if (transform.tag == "Falling")
             {
                 working = true;
-                pos.y = 8.2f;
+                pos.y = 7.2f;
                 rb2d.gravityScale = 0;
                 rb2d.velocity *= 0;
             }
             if (transform.tag == "Raising")
             {
                 working = true;
-                pos.y = -3.3f;
+                pos.y = -2.3f;
             }
             transform.position = pos;
 		}

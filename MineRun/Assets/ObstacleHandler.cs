@@ -33,24 +33,30 @@ public class ObstacleHandler : MonoBehaviour {
 	    if(curObstacles == 0)
         {
             playerPos = player.transform.position;
-            rand = Random.Range(0, 3);
+            rand = Random.Range(0, 4);
             objectPos = playerPos;
             objectPos.x += 16;
             if(rand == 0)
             {
-                objectPos.y = 7.5f;
+                //objectPos.y = 8.5f;
+                objectPos.x += 2;
+                objectPos.y = 0;
                 startTime = Time.time;
                 ghostAnimator.SetBool("screaming", true);
             }
             if (rand == 1)
             {
-                objectPos.y = -3.5f;
+                objectPos.y = -4.5f;
                 startTime = Time.time;
                 ghostAnimator.SetBool("armDown", true);
             }
             if (rand == 2)
             {
-                objectPos.y = 5.0f;
+                objectPos.y = 4.0f;
+            }
+            if (rand == 3)
+            {
+                objectPos.y = -3.2f;
             }
             Instantiate(obstacle[rand], objectPos, Quaternion.identity);
             curObstacles++;
@@ -78,6 +84,12 @@ public class ObstacleHandler : MonoBehaviour {
         }
 
         if (coll.gameObject.tag == "Falling")
+        {
+            Destroy(coll.gameObject);
+            curObstacles--;
+        }
+
+        if (coll.gameObject.tag == "Static")
         {
             Destroy(coll.gameObject);
             curObstacles--;
