@@ -13,15 +13,16 @@ public class Scroll : MonoBehaviour {
         startPos = transform.position;
         width = 19;
         moveSpeed = 0.05f;
-        startPos.x = 13.0f;
+        startPos.x = 12.0f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         curPos = transform.position;
-        if(curPos.x < 13.0f - width * 2)
+        if(curPos.x <= 12.1f - width * 2)
         {
-            curPos = startPos;
+
+            curPos.x = startPos.x;
             transform.position = curPos;
         }
         else
