@@ -139,7 +139,7 @@ public class controls : MonoBehaviour {
             currentTime = Time.time;
             if(currentTime >= targetEnd)
             {
-                Application.LoadLevel("final");
+                Application.LoadLevel("Menu");
             }
         }
 
