@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: dcd4baa2b83bc3d4daa6d4617e4a2f0c
-timeCreated: 1459766848
+timeCreated: 1460169993
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -165,22 +165,22 @@ TextureImporter:
     - name: Droid jumping finished effects_1
       rect:
         serializedVersion: 2
-        x: 209
+        x: 196
         y: 182
         width: 1074
         height: 1726
       alignment: 9
-      pivot: {x: .556506991, y: .65626055}
+      pivot: {x: .56174314, y: .652854919}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_2
       rect:
         serializedVersion: 2
-        x: 1555
-        y: 182
+        x: 1562
+        y: 193
         width: 1088
         height: 1561
       alignment: 9
-      pivot: {x: .565138876, y: .622898996}
+      pivot: {x: .561204135, y: .618496239}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_3
       rect:
@@ -190,17 +190,17 @@ TextureImporter:
         width: 1041
         height: 1564
       alignment: 9
-      pivot: {x: .548905075, y: .569442332}
+      pivot: {x: .549752176, y: .566230655}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_4
       rect:
         serializedVersion: 2
         x: 11895
-        y: 193
+        y: 196
         width: 1041
         height: 1670
       alignment: 9
-      pivot: {x: .548905075, y: .597551882}
+      pivot: {x: .556860149, y: .595255315}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_5
       rect:
@@ -240,7 +240,7 @@ TextureImporter:
         width: 1568
         height: 1450
       alignment: 9
-      pivot: {x: .560606956, y: .593627393}
+      pivot: {x: .563702345, y: .591848433}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_9
       rect:
@@ -250,7 +250,7 @@ TextureImporter:
         width: 1034
         height: 1412
       alignment: 9
-      pivot: {x: .555801034, y: .562495589}
+      pivot: {x: .557245076, y: .562880158}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_10
       rect:
@@ -290,7 +290,7 @@ TextureImporter:
         width: 1472
         height: 1355
       alignment: 9
-      pivot: {x: .546113908, y: .56011498}
+      pivot: {x: .545237839, y: .565525293}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_14
       rect:
@@ -300,17 +300,17 @@ TextureImporter:
         width: 1605
         height: 1474
       alignment: 9
-      pivot: {x: .552865803, y: .601313174}
+      pivot: {x: .557623863, y: .600392163}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_15
       rect:
         serializedVersion: 2
-        x: 8061
+        x: 8048
         y: 182
         width: 1055
         height: 1357
       alignment: 9
-      pivot: {x: .551472723, y: .562527537}
+      pivot: {x: .563118339, y: .559976399}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Droid jumping finished effects_16
       rect:
@@ -1161,16 +1161,6 @@ TextureImporter:
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Droid jumping finished effects_101
-      rect:
-        serializedVersion: 2
-        x: 7509
-        y: 667
-        width: 360
-        height: 27
-      alignment: 0
-      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

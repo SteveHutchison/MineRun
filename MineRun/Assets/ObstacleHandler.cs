@@ -59,7 +59,7 @@ public class ObstacleHandler : MonoBehaviour {
             }
             if (rand == 2)
             {
-                objectPos.y = 4.0f;
+                objectPos.y = 0.1f;
             }
             if (rand == 3)
             {

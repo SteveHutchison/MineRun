@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: 5086dec899ae5ee4ab7ebd6f40e3e236
-timeCreated: 1457305900
+guid: a975e8e573bed1245a59e44077358a26
+timeCreated: 1460244085
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Droid seperated moving finished_0
-    21300002: Droid seperated moving finished_1
-    21300004: Droid seperated moving finished_2
-    21300006: Droid seperated moving finished_3
-    21300008: Droid seperated moving finished_4
-    21300010: Droid seperated moving finished_5
+    21300000: Falling_Debris_002_0
+    21300002: Falling_Debris_002_1
+    21300004: Falling_Debris_002_2
+    21300006: Falling_Debris_002_3
+    21300008: Falling_Debris_002_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -56,65 +55,55 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Droid seperated moving finished_0
+    - name: Falling_Debris_002_0
       rect:
         serializedVersion: 2
-        x: 168
-        y: 151
-        width: 959
-        height: 1222
+        x: 0
+        y: 0
+        width: 253
+        height: 407
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Droid seperated moving finished_1
+    - name: Falling_Debris_002_1
       rect:
         serializedVersion: 2
-        x: 1484
-        y: 151
-        width: 964
-        height: 1222
+        x: 256
+        y: 366
+        width: 5
+        height: 14
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Droid seperated moving finished_2
+    - name: Falling_Debris_002_2
       rect:
         serializedVersion: 2
-        x: 2856
-        y: 147
-        width: 969
-        height: 1226
+        x: 270
+        y: 18
+        width: 199
+        height: 390
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Droid seperated moving finished_3
+    - name: Falling_Debris_002_3
       rect:
         serializedVersion: 2
-        x: 4277
-        y: 147
-        width: 969
-        height: 1226
+        x: 505
+        y: 0
+        width: 469
+        height: 408
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Droid seperated moving finished_4
+    - name: Falling_Debris_002_4
       rect:
         serializedVersion: 2
-        x: 5715
-        y: 147
-        width: 972
-        height: 1226
+        x: 985
+        y: 0
+        width: 499
+        height: 408
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Droid seperated moving finished_5
-      rect:
-        serializedVersion: 2
-        x: 7095
-        y: 143
-        width: 965
-        height: 1226
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

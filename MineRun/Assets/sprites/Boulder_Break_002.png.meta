@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: a65156badedf99d46867903437a085d3
+timeCreated: 1460244288
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Boulder_Break_002_0
+    21300002: Boulder_Break_002_1
+    21300004: Boulder_Break_002_2
+    21300006: Boulder_Break_002_3
+    21300008: Boulder_Break_002_4
+    21300010: Boulder_Break_002_5
+    21300012: Boulder_Break_002_6
+    21300014: Boulder_Break_002_7
+    21300016: Boulder_Break_002_8
+    21300018: Boulder_Break_002_9
+    21300020: Boulder_Break_002_10
+    21300022: Boulder_Break_002_11
+    21300024: Boulder_Break_002_12
+    21300026: Boulder_Break_002_13
+    21300028: Boulder_Break_002_14
+    21300030: Boulder_Break_002_15
+    21300032: Boulder_Break_002_16
+    21300034: Boulder_Break_002_17
+    21300036: Boulder_Break_002_18
+    21300038: Boulder_Break_002_19
+    21300040: Boulder_Break_002_20
+    21300042: Boulder_Break_002_21
+    21300044: Boulder_Break_002_22
+    21300046: Boulder_Break_002_23
+    21300048: Boulder_Break_002_24
+    21300050: Boulder_Break_002_25
+    21300052: Boulder_Break_002_26
+    21300054: Boulder_Break_002_27
+    21300056: Boulder_Break_002_28
+    21300058: Boulder_Break_002_29
+    21300060: Boulder_Break_002_30
+    21300062: Boulder_Break_002_31
+    21300064: Boulder_Break_002_32
+    21300066: Boulder_Break_002_33
+    21300068: Boulder_Break_002_34
+    21300070: Boulder_Break_002_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Boulder_Break_002_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 29
+        width: 628
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_1
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 31
+        width: 629
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_2
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 666
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_3
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 45
+        width: 702
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_4
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 31
+        width: 640
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_5
+      rect:
+        serializedVersion: 2
+        x: 3118
+        y: 581
+        width: 74
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_6
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 518
+        width: 33
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_7
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 529
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_8
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 509
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_9
+      rect:
+        serializedVersion: 2
+        x: 3362
+        y: 514
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_10
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 454
+        width: 4
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_11
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 455
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_12
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 460
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_13
+      rect:
+        serializedVersion: 2
+        x: 2869
+        y: 460
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_14
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 448
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_15
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 437
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_16
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 0
+        width: 680
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_17
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 298
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_18
+      rect:
+        serializedVersion: 2
+        x: 2863
+        y: 192
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_19
+      rect:
+        serializedVersion: 2
+        x: 2866
+        y: 106
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_20
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 52
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_21
+      rect:
+        serializedVersion: 2
+        x: 2923
+        y: 33
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_22
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 28
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_23
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 29
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_24
+      rect:
+        serializedVersion: 2
+        x: 3047
+        y: 31
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_25
+      rect:
+        serializedVersion: 2
+        x: 3017
+        y: 23
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_26
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 20
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_27
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 20
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_28
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 0
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_29
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 11
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_30
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 14
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_31
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 0
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_32
+      rect:
+        serializedVersion: 2
+        x: 2971
+        y: 0
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_33
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_34
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 0
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boulder_Break_002_35
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

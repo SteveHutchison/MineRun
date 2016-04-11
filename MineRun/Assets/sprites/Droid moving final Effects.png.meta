@@ -1,9 +1,31 @@
 fileFormatVersion: 2
 guid: 3b927fe6549115a4fb087914090a69d4
-timeCreated: 1459766350
+timeCreated: 1460170367
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Droid moving final Effects_0
+    21300002: Droid moving final Effects_1
+    21300004: Droid moving final Effects_2
+    21300006: Droid moving final Effects_3
+    21300008: Droid moving final Effects_4
+    21300010: Droid moving final Effects_5
+    21300012: Droid moving final Effects_6
+    21300014: Droid moving final Effects_7
+    21300016: Droid moving final Effects_8
+    21300018: Droid moving final Effects_9
+    21300020: Droid moving final Effects_10
+    21300022: Droid moving final Effects_11
+    21300024: Droid moving final Effects_12
+    21300026: Droid moving final Effects_13
+    21300028: Droid moving final Effects_14
+    21300030: Droid moving final Effects_15
+    21300032: Droid moving final Effects_16
+    21300034: Droid moving final Effects_17
+    21300036: Droid moving final Effects_18
+    21300038: Droid moving final Effects_19
+    21300040: Droid moving final Effects_20
+    21300042: Droid moving final Effects_21
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +71,227 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Droid moving final Effects_0
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 71
+        width: 1077
+        height: 1366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_1
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1217
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_2
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 71
+        width: 1082
+        height: 1366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_3
+      rect:
+        serializedVersion: 2
+        x: 2738
+        y: 1231
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_4
+      rect:
+        serializedVersion: 2
+        x: 2922
+        y: 67
+        width: 1090
+        height: 1370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_5
+      rect:
+        serializedVersion: 2
+        x: 4267
+        y: 1222
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_6
+      rect:
+        serializedVersion: 2
+        x: 4457
+        y: 67
+        width: 1090
+        height: 1373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_7
+      rect:
+        serializedVersion: 2
+        x: 5846
+        y: 1218
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_8
+      rect:
+        serializedVersion: 2
+        x: 6036
+        y: 67
+        width: 1090
+        height: 1370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_9
+      rect:
+        serializedVersion: 2
+        x: 7386
+        y: 1204
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_10
+      rect:
+        serializedVersion: 2
+        x: 7584
+        y: 63
+        width: 1082
+        height: 1376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_11
+      rect:
+        serializedVersion: 2
+        x: 6032
+        y: 712
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_12
+      rect:
+        serializedVersion: 2
+        x: 6032
+        y: 690
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_13
+      rect:
+        serializedVersion: 2
+        x: 6024
+        y: 673
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_14
+      rect:
+        serializedVersion: 2
+        x: 5975
+        y: 448
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_15
+      rect:
+        serializedVersion: 2
+        x: 7554
+        y: 445
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_16
+      rect:
+        serializedVersion: 2
+        x: 4427
+        y: 426
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_17
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 392
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_18
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 391
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_19
+      rect:
+        serializedVersion: 2
+        x: 4241
+        y: 379
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_20
+      rect:
+        serializedVersion: 2
+        x: 5790
+        y: 396
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Droid moving final Effects_21
+      rect:
+        serializedVersion: 2
+        x: 7368
+        y: 396
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

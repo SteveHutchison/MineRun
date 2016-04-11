@@ -48,11 +48,15 @@ public class controls : MonoBehaviour {
     public float targetSlideTime;
     public float slideSpeed;
 
+    private GameObject scoreboard;
+
     public GameObject ghost;
     private bool endgame;
     public bool endtimer;
     public float targetEnd;
 
+    private float startPosition;
+    private float Score;
 
     // Use this for initialization
     void Start ()
@@ -69,7 +73,7 @@ public class controls : MonoBehaviour {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         source = GetComponent<AudioSource>();
 
-        
+        startPosition = transform.position.x;
 
         animator = GetComponent<Animator>();
         animator.SetBool("jumping", false);
@@ -83,6 +87,8 @@ public class controls : MonoBehaviour {
 
         ghost = GameObject.FindGameObjectWithTag("Ghost");
 
+        scoreboard = GameObject.FindGameObjectWithTag("Scoreboard");
+
         ghostAnimator = ghost.GetComponent<Animator>();
 
         startdistance = (transform.position.x - ghost.transform.position.x);
@@ -92,6 +98,11 @@ public class controls : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        Score = transform.position.x - startPosition;
+        int score = (int)Score;
+        scoreboard.GetComponent<ScoreBoard>().AddScore(score);
+
+
         curdistance = (transform.position.x - ghost.transform.position.x);
         if(curdistance <= 3.5f && !endgame)
         {
