@@ -50,6 +50,8 @@ public class controls : MonoBehaviour {
 
     private GameObject scoreboard;
 
+    public bool canSlide2;
+
     public GameObject ghost;
     private bool endgame;
     public bool endtimer;
@@ -65,6 +67,8 @@ public class controls : MonoBehaviour {
         canSmash = true;
         smashing = false;
         smashTime = 1.0f;
+
+        canSlide2 = true;
 
         gameStartTime = Time.time;
         canJump = false;
@@ -170,7 +174,7 @@ public class controls : MonoBehaviour {
             source.PlayOneShot(sfx[0]);
         }
 
-        if (canSlide && Input.GetMouseButtonDown(1))
+        if (canSlide && Input.GetMouseButtonDown(1) && canSlide2)
         {
             startdistance = (transform.position.x - ghost.transform.position.x);
             this.GetComponent<ConstantMover>().ChangeSpeed(slideSpeed);
@@ -213,7 +217,7 @@ public class controls : MonoBehaviour {
             {
                 startdistance = (transform.position.x - ghost.transform.position.x);
             }
-
+            canSlide2 = false;
             startdistance -= hitloss;
             hitDecreaseOnce = true;
             this.GetComponent<ConstantMover>().ChangeSpeed(-2.5f);
@@ -243,12 +247,14 @@ public class controls : MonoBehaviour {
         */
         if (curdistance <= startdistance && increaseOnce)
         {
+            canSlide2 = true;
             this.GetComponent<ConstantMover>().ChangeSpeed(2.5f);
             increaseOnce = false;
         }
 
         if (curdistance <= startdistance && hitDecreaseOnce)
         {
+            canSlide2 = true;
             this.GetComponent<ConstantMover>().SetSpeed(10.0f);
             hitDecreaseOnce = false;
 
