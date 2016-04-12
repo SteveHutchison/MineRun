@@ -5,7 +5,7 @@ public class ObstacleHandler : MonoBehaviour {
 
     public GameObject[] obstacle;
     private GameObject player;
-    private int curObstacles;
+    public int curObstacles;
     private Vector3 playerPos;
     private Vector3 objectPos;
     private int rand;
@@ -14,6 +14,7 @@ public class ObstacleHandler : MonoBehaviour {
     private GameObject ghost1;
 
     private int lastRand;
+    public AudioClip[] sfx;
 
     private float startTime;
     public float curTime;
@@ -50,12 +51,14 @@ public class ObstacleHandler : MonoBehaviour {
                 objectPos.y = 0;
                 startTime = Time.time;
                 ghostAnimator.SetBool("screaming", true);
+                ghost1.GetComponent<AudioSource>().PlayOneShot(sfx[0]);
             }
             if (rand == 1)
             {
                 objectPos.y = -4.5f;
                 startTime = Time.time;
                 ghostAnimator.SetBool("armDown", true);
+                ghost1.GetComponent<AudioSource>().PlayOneShot(sfx[0]);
             }
             if (rand == 2)
             {

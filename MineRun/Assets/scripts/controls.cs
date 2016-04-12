@@ -107,6 +107,7 @@ public class controls : MonoBehaviour {
         if(curdistance <= 3.5f && !endgame)
         {
             ghostAnimator.SetBool("grabbing", true);
+            ghost.GetComponent<AudioSource>().PlayOneShot(sfx[2]);
             endtimer = true;
         }
 
@@ -162,6 +163,7 @@ public class controls : MonoBehaviour {
 
         if (canSmash && Input.GetMouseButtonDown(2))
         {
+            animator.SetBool("drilling", true);
             smash = true;
             smashStartTime = Time.time - gameStartTime;
             smashing = true;
@@ -179,6 +181,7 @@ public class controls : MonoBehaviour {
             sliding = true;
             slideCooldown = 5.0f;
             source.PlayOneShot(sfx[2]);
+            animator.SetBool("sliding", true);
         }
 
         if (sliding)
@@ -190,6 +193,7 @@ public class controls : MonoBehaviour {
                 this.GetComponent<ConstantMover>().sliding = false;
                 sliding = false;
                 decreaseOnce = true;
+                animator.SetBool("sliding", false);
             }
         }
 
@@ -199,6 +203,7 @@ public class controls : MonoBehaviour {
             if (currentTime - smashStartTime > smashTime)
             {
                 smashing = false;
+                animator.SetBool("drilling", false);
             }
         }
 
@@ -219,6 +224,7 @@ public class controls : MonoBehaviour {
                 this.GetComponent<ConstantMover>().sliding = false;
                 sliding = false;
                 decreaseOnce = true;
+                animator.SetBool("sliding", false);
             }
         }
 

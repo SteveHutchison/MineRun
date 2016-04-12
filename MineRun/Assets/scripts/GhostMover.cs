@@ -16,9 +16,13 @@ public class GhostMover : MonoBehaviour
 
     private Rigidbody2D rb2d;
 
+    
+    private AudioSource source;
+
     // Use this for initialization
     void Start()
     {
+        source = GetComponent<AudioSource>();
         //maxSpeed = 8;
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         sliding = false;
